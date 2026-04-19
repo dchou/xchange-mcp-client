@@ -1,6 +1,10 @@
 # xchange-mcp-client
 
-[xchange-mcp](https://github.com/dchou/xchange-mcp) 服务器的 Python 客户端。`XchangeMcpClient` 封装 MCP HTTP API，让你以熟悉的 ccxt 风格接口在 20+ 个加密货币交易所进行交易。
+[xchange-mcp](https://github.com/dchou/xchange-mcp) 服务器的轻量 Python 客户端。`XchangeMcpClient` 封装 MCP HTTP API，提供简洁的 ccxt 风格接口，让你在 20+ 个加密货币交易所进行交易——涵盖 ccxt 支持及非 ccxt 的交易所。
+
+它屏蔽了各交易所的细节差异与复杂的参数设置，让你无需熟悉底层 ccxt 规范，即可下单、查询余额与管理持仓。
+
+无需安装 ccxt。
 
 ## 支持的交易所
 
@@ -13,17 +17,17 @@
 | OKX | ✓ | ✓ | ✓ | ✓ |
 | Gate.io | ✓ | ✓ | ✓ | ✓ |
 | Bitget | ✓ | ✓ | ✓ | ✓ |
-| MEXC | ✓ | ✓ | ✓ | - |
-| HTX | ✓ | ✓ | ✓ | - |
+| MEXC | ✓ | - | ✓ | - |
+| HTX | ✓ | - | ✓ | - |
 | KuCoin | ✓ | - | ✓ | - |
 | Bitfinex | ✓ | - | ✓ | ✓ |
 | Deribit | ✓ | - | ✓ | ✓ |
 | Pionex | ✓ | - | ✓ | - |
-| Kraken / KrakenFutures | ✓ | - | ✓ | - |
+| Kraken | ✓ | - | ✓ | - |
 | Coinbase | ✓ | - | - | - |
 | Robinhood | ✓ | - | - | - |
 | Alpaca | ✓ | - | - | ✓ |
-| BingX | - | - | ✓ | - |
+| BingX | ✓ | - | ✓ | - |
 | Maicoin MAX | ✓ | - | - | - |
 | BitoPro | ✓ | - | - | - |
 

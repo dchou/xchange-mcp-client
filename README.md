@@ -1,6 +1,10 @@
 # xchange-mcp-client
 
-A Python client for the [xchange-mcp](https://github.com/dchou/xchange-mcp) server. `XchangeMcpClient` wraps the MCP HTTP API to let you trade on 20+ crypto exchanges with a familiar, ccxt-style interface.
+A lightweight Python client for the [xchange-mcp](https://github.com/dchou/xchange-mcp) server. `XchangeMcpClient` wraps the MCP HTTP API and provides a simple ccxt-style interface to trade on 20+ exchanges — including both ccxt-supported and non-ccxt exchanges.
+
+It abstracts away exchange-specific quirks and complex parameter handling, so you can place orders, check balances, and manage positions without needing to know the underlying ccxt conventions.
+
+No ccxt installation required.
 
 ## Supported Exchanges
 
@@ -13,8 +17,8 @@ A Python client for the [xchange-mcp](https://github.com/dchou/xchange-mcp) serv
 | OKX | ✓ | ✓ | ✓ | ✓ |
 | Gate.io | ✓ | ✓ | ✓ | ✓ |
 | Bitget | ✓ | ✓ | ✓ | ✓ |
-| MEXC | ✓ | ✓ | ✓ | - |
-| HTX | ✓ | ✓ | ✓ | - |
+| MEXC | ✓ | - | ✓ | - |
+| HTX | ✓ | - | ✓ | - |
 | KuCoin | ✓ | - | ✓ | - |
 | Bitfinex | ✓ | - | ✓ | ✓ |
 | Deribit | ✓ | - | ✓ | ✓ |
@@ -23,7 +27,7 @@ A Python client for the [xchange-mcp](https://github.com/dchou/xchange-mcp) serv
 | Coinbase | ✓ | - | - | - |
 | Robinhood | ✓ | - | - | - |
 | Alpaca | ✓ | - | - | ✓ |
-| BingX | - | - | ✓ | - |
+| BingX | ✓ | - | ✓ | - |
 | Maicoin MAX | ✓ | - | - | - |
 | BitoPro | ✓ | - | - | - |
 
