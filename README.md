@@ -2,6 +2,43 @@
 
 A Python client for the [xchange-mcp](https://github.com/dchou/xchange-mcp) server. `XchangeMcpClient` wraps the MCP HTTP API to let you trade on 20+ crypto exchanges with a familiar, ccxt-style interface.
 
+## Supported Exchanges
+
+### Centralized (CEX)
+
+| Exchange | Spot | Margin | Futures | Testnet |
+|----------|------|--------|---------|---------|
+| Binance | ✓ | ✓ | ✓ | ✓ |
+| Bybit | ✓ | ✓ | ✓ | ✓ |
+| OKX | ✓ | ✓ | ✓ | ✓ |
+| Gate.io | ✓ | ✓ | ✓ | ✓ |
+| Bitget | ✓ | ✓ | ✓ | ✓ |
+| MEXC | ✓ | ✓ | ✓ | - |
+| HTX | ✓ | ✓ | ✓ | - |
+| KuCoin | ✓ | - | ✓ | - |
+| Bitfinex | ✓ | - | ✓ | ✓ |
+| Deribit | ✓ | - | ✓ | ✓ |
+| Pionex | ✓ | - | ✓ | - |
+| Kraken | ✓ | - | ✓ | - |
+| Coinbase | ✓ | - | - | - |
+| Robinhood | ✓ | - | - | - |
+| Alpaca | ✓ | - | - | ✓ |
+| BingX | - | - | ✓ | - |
+| Maicoin MAX | ✓ | - | - | - |
+| BitoPro | ✓ | - | - | - |
+
+> Maicoin MAX and BitoPro are Taiwan-based exchanges.
+
+### Decentralized (DEX)
+
+| Exchange | Perpetuals | Testnet |
+|----------|-----------|---------|
+| Hyperliquid | ✓ | - |
+| Backpack | ✓ | - |
+| Aster | ✓ | - |
+| Lighter | ✓ | - |
+
+
 ## Installation
 
 ```bash
@@ -298,9 +335,6 @@ python examples/test_exchange_client.py --url http://localhost:8000/mcp -e binan
 
 Copy `.env.example` to `.env` and fill in your API credentials before running the examples.
 
-## Supported Exchanges
-
-Binance, Bybit, OKX, Gate.io, Bitget, Hyperliquid, Kraken, KrakenFutures, KuCoin, MEXC, HTX, BingX, Backpack, Alpaca, Robinhood, Pionex, Deribit, Bitfinex, Lighter, MAX, BitoPro, and more.
 
 ## License
 
